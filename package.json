@@ -1,35 +1,32 @@
 {
-  "name": "OpenShift-Sample-App",
+  "name": "hubot-openshift",
   "version": "1.0.0",
-  "description": "OpenShift Sample Application",
+  "description": "Hubot for Twitch.tv on OpenShift",
   "keywords": [
+    "Hubot",
     "OpenShift",
+	"Twitch.tv",
     "Node.js",
     "application",
     "openshift"
-  ],
+  ],  
   "author": {
-    "name": "OpenShift",
-    "email": "ramr@example.org",
-    "url": "http://www.openshift.com/"
-  },
-  "homepage": "http://www.openshift.com/",
+    "name": "Alexander Bätz",
+    "email": "baetz.alexander@googlemail.com"
+  },  
   "repository": {
     "type": "git",
-    "url": "https://github.com/openshift/origin-server"
-  },
-
+    "url": "https://github.com/Laures/Openshift-Hubot.git"
+  },  
   "engines": {
-    "node": ">= 0.6.0",
-    "npm": ">= 1.0.0"
+    "node": ">= 0.8.x",
+    "npm": ">= 1.1.x"
   },
-
   "dependencies": {
-    "express": "~3.4.4"
+    "hubot": ">= 2.6.0 < 3.0.0",
+    "hubot-scripts": ">= 2.5.0 < 3.0.0"
   },
-  "devDependencies": {},
-  "bundleDependencies": [],
-
-  "private": true,
-  "main": "server.js"
+  "scripts": {
+    "start": "PORT=$OPENSHIFT_NODEJS_PORT BIND_ADDRESS=$OPENSHIFT_NODEJS_IP HEROKU_URL=$OPENSHIFT_APP_DNS REDIS_URL=redis://:$REDIS_PASSWORD@$OPENSHIFT_REDIS_HOST:$OPENSHIFT_REDIS_PORT bin/hubot -n Hubot -a shell"
+  }
 }
