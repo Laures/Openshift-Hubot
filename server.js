@@ -16,9 +16,9 @@ process.env['MONGODB_DB'] = process.env.OPENSHIFT_APP_NAME;
 
 process.env['HUBOT_IRC_SERVER'] = 'irc.twitch.tv';
 process.env['HUBOT_IRC_PORT'] = '6667';
-process.env['HUBOT_IRC_PASSWORD'] = 'oauth:n75tmqee5d4ztd9ejmwyz7rhzlld9sk';
+process.env['HUBOT_IRC_PASSWORD'] = 'oauth:ggu5l5n5saszae0t5fank3vtahqqsst';
 process.env['HUBOT_IRC_ROOMS'] = '#laures1985';
-process.env['HUBOT_IRC_NICK'] = 'Laures1985';
+process.env['HUBOT_IRC_NICK'] = 'BenevolentCoder';
 
 Hubot = require('./node_modules/hubot/index.coffee');
 Fs = require('fs');
