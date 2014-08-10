@@ -27,6 +27,10 @@
     "hubot-scripts": ">= 2.5.0 < 3.0.0",
 	"hubot-irc": ">= 0.2.7",
 	"mongodb": ">= 1.4.8",
-	"coffee-script":">=1.7"
+	"coffee-script": ">=1.7",
+	"winston": ">=0.7.3",
+	"winston-splunk": ">=0.1.0",
+	"winston-loggly": ">=1.0.1",
+	"winston-logentries": ">=1.0.0"
   }
 }
